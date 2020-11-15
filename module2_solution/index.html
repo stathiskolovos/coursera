@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Module 2 Solution</title>
+		<style>
+
+			/********** Base styles **********/
+			* {
+			  box-sizing: border-box;
+			}
+
+			h1{
+			  margin-bottom: 50px;
+			  margin-top: 50px;
+			  
+			  /*Header size to be 75% bigger than section*/ 
+			  font-size: 175%;
+			  font-family: Comic Sans MS;
+			  text-align: center;
+			}
+
+			#box{
+			  font-family: Comic Sans MS;
+			  border: 3px solid black;
+			  background-color: #808080;
+			  height: 250px;
+			  margin: 15px;
+			  overflow: auto;
+			}
+
+			#title{
+				/*position sticky for when we have overflow of text*/
+				position: sticky;
+				border-bottom: 3px solid black;
+			    border-left: 3px solid black;
+				right: 0;
+				top: 0;
+				width: 40%;
+				height: 35px;
+				text-align: center;
+				margin-left: 60%;
+				/*Font size 25% bigger than dummy text size*/
+				font-size: 125%;	
+			}
+
+			#content{
+				margin: 20px;
+			}
+
+			/* Using Simple Responsive Framework from lectures */
+			.row {
+			  width: 100%;
+			}
+
+			/********** Desktop **********/
+			@media (min-width: 992px) {
+			  .col-lg-1, .col-lg-2, .col-lg-3 {
+			    float: left;
+			  }
+			  .col-lg-1 {
+			    width: 33%;
+			  }
+			  .col-lg-2 {
+			    width: 66%;
+			  }
+			  .col-lg-3 {
+			    width: 100%;
+			  }
+			}
+
+			/********** Tablet **********/
+			@media (min-width: 768px) and (max-width: 991px) {
+			  .col-md-1, .col-md-2{
+			    float: left;
+			  }
+			  .col-md-1 {
+			    width: 50%;
+			  }
+			  .col-md-2 {
+			    width: 100%;
+			  }
+			}
+
+			/********** Phone **********/
+			@media (max-width: 767px) {
+			  .col-sd-1{
+			    float: left;
+			  }
+			  .col-sd-1 {
+			    width: 100%;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<h1>Our Menu</h1>
+
+		<div class="row">
+
+		  	<div class="col-lg-1 col-md-1 col-sd-1">
+		  		<div id="box">
+		  			<div id="title" style="background-color: #FFCCFF;">Chicken</div>
+		  			<div id="content">This is a dummy text. Chicken Chicken Chicken Chicken Chicken Chicken Chicken Chicken Chicken Chicken ChickenChicken ChickenChickenChicken Chicken Chicken ChickenChickenChickenChicken Chicken
+		  			</div>
+		  		</div>
+		  	</div>
+
+		  	<div class="col-lg-1 col-md-1 col-sd-1">
+		  		<div id="box">
+		  			<div id="title" style="background-color: #980000; color: white">Beef</div>
+		  			<div id="content">This is also a dummy text. Beef Beefv Beef  vv  Beef Beef Beef Beef Beef BeefBeef Beef Beef Beef BeefBeef Beef Beef Beef BeefBeef Beef Beef Beef Beef BeefBeefBeef Beef Beef Beef BeefBeefBeef
+		  			</div>
+		  		</div>
+		  	</div>
+
+		  	<div class="col-lg-1 col-md-2 col-sd-1">
+		  		<div id="box">
+		  			<div id="title" style="background-color: #FFFFCC;">Sushi</div>
+		  			<div id="content">Yep... Another one. Sushi SushiSushiSushi SushiSushiSushiSushi SushiSushi SushiSushi SushiSushiSushi SushiSushi SushiSushiSushiSushiSushi SushiSushi SushiSushiSushi vSushiSushiSushi SushiSushi Sushi Sushi Sushi Sushi Sushi Sushi Sushi Sushi Sushi SushiSushi Sushi Sushi Sushi SushiSushiSushi
+		  			</div>
+		  		</div>
+		  	</div>
+
+		</div>
+		
+	</body>
+</html>
