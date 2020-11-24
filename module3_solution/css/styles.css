@@ -1,0 +1,29 @@
+#box{
+			  font-family: Comic Sans MS;
+			  background-color: #808080;
+			  height: 1000px;
+			  margin: 25px;
+			  overflow: auto;
+			}
+		#header_box{
+			font-family: Comic Sans MS;
+			background-color: #808080;
+			border: 3px solid black;
+			position: sticky;
+		}
+		#list-item{
+			font-family: Comic Sans MS;
+			text-align: center;
+			font-size: 22px;
+			background-color: white;
+			border: 3px solid black;
+		}
+		#title{
+			text-align: center;
+			font-size: 25px;
+			margin-top: 10px;
+		}
+		#content{
+				font-size: 18px;
+				margin: 20px;
+			}
